@@ -34,7 +34,7 @@
 
 #Questão 05
 
-import random
+# import random
 
 # numeroaleatorio1 = random.randint(1, 500)
 # numeroaleatorio2 = random.randint(1, 500)
@@ -50,12 +50,25 @@ import random
 
 #Questão 07
 
-numero_solicitado = int(input('Digite um número:'))
-numero_solicitado2 = int(input('Digite um número:'))
-numero_solicitado3 = int(input('Digite um número:'))
-
+a = int(input('Digite um número:'))
+b = int(input('Digite um número:'))
+c = int(input('Digite um número:'))
 
 desejo = input('Deseja ver os valores em ordem crescente ou descrescente?')
+
+if c > b > a and desejo == 'decrescente' or c < b < a and desejo == 'crescente':
+    print(c, b, a)
+elif c > a > b and desejo == 'decrescente' or c < a < b and desejo == 'crescente':
+        print(c, a, b)
+elif b > c > a and desejo == 'decrescente' or b < c < a and desejo == 'crescente':
+        print(b, c , a)
+elif b > a > c and desejo == 'decrescente' or b < a < c and desejo == 'crescente' :
+        print(b, a, c)
+elif a > c > b and desejo == 'decrescente' or a < c < b and desejo == 'crescente' :
+        print(a, c, b)
+elif a > b > c and desejo == 'decrescente' or a < b < c and desejo == 'crescente' :
+        print(a, b, c)
+
 
 
 
